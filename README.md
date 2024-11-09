@@ -24,15 +24,26 @@ Para acceder al sistema, utiliza las siguientes credenciales:
 
 Es necesario ejecutar un script llamado `dataTables.sql` para cargar la base de datos en Laragon utilizando HeidiSQL. Para hacerlo, sigue estos pasos:
 
-1. Abre HeidiSQL y conecta a tu servidor MySQL.
-2. Selecciona la base de datos donde deseas cargar el script.
-3. Ve a "Archivo" y selecciona "Ejecutar archivo SQL".
-4. Busca el archivo `dataTables.sql` y ejecútalo.
+1. **Descarga y Extracción del Archivo**:
+   - Asegúrate de que el archivo del sistema Parristencia (por ejemplo, un archivo ZIP) esté descargado en tu computadora.
+   - Extrae este archivo en la carpeta `www` de Laragon. Esta carpeta normalmente se encuentra en el directorio donde instalaste Laragon (por defecto, suele ser `C:\laragon\www`). Esto es crucial ya que Laragon utiliza esta carpeta como su raíz de documentos para servir aplicaciones web.
+
+2. **Carga de la Base de Datos**:
+   - Una vez que hayas extraído el archivo, necesitarás cargar la base de datos utilizando HeidiSQL. Para ello:
+     1. Abre HeidiSQL y conecta a tu servidor MySQL.
+     2. Selecciona la base de datos donde deseas cargar el script.
+     3. Ve a "Archivo" y selecciona "Ejecutar archivo SQL".
+     4. Busca el archivo `dataTables.sql` que se encuentra dentro de la carpeta extraída y ejecútalo.
+
+3. **Acceso al Sistema**:
+   - Después de configurar la base de datos, puedes acceder al sistema utilizando las siguientes credenciales:
+     - **Usuario**: javier
+     - **Contraseña**: 123
 
 ## Tecnologías Utilizadas
 
 Parristencia está construido con las siguientes tecnologías:
 
-- **PHP**: Versión 8.0, un lenguaje de programación ampliamente utilizado para el desarrollo web.
-- **MySQL**: Versión 5.7, un sistema de gestión de bases de datos relacional.
+- **PHP**: Versión 8.0
+- **MySQL**: Versión 5.7
 - **Laragon**: Herramienta que proporciona un entorno de desarrollo local eficiente y fácil de usar.
