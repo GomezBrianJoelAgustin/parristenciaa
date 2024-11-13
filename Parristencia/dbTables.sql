@@ -6,7 +6,7 @@ CREATE TABLE institutos (
     instituto_id INT AUTO_INCREMENT PRIMARY KEY,
     cue_instituto INT(10),
     nombre_instituto VARCHAR(100) UNIQUE,
-    direccion_instituto VARCHAR(255) UNIQUE ON DELETE CASCADE
+    direccion_instituto VARCHAR(255) UNIQUE 
 );
 
 CREATE TABLE materias (
