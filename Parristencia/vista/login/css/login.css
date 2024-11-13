@@ -1,0 +1,49 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Color de fondo suave */
+    color: #333; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Estilo del encabezado principal */
+h1 {
+    font-size: 3em; /* Tamaño grande para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #4CAF50; /* Color verde para el título */
+}
+
+/* Estilo del segundo encabezado (fecha) */
+h2 {
+    font-size: 1.5em; /* Tamaño mediano para la fecha */
+    margin-bottom: 30px; /* Espacio debajo de la fecha */
+    color: #555; /* Color gris para la fecha */
+}
+
+/* Estilo del formulario y botón */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos del formulario */
+}
+
+input[type="submit"] {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1em; /* Tamaño del texto en el botón */
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto en el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse sobre el botón */
+}
