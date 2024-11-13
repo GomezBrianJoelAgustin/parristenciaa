@@ -6,14 +6,14 @@ CREATE TABLE institutos (
     instituto_id INT AUTO_INCREMENT PRIMARY KEY,
     cue_instituto INT(10),
     nombre_instituto VARCHAR(100) UNIQUE,
-    direccion_instituto VARCHAR(255) UNIQUE
+    direccion_instituto VARCHAR(255) UNIQUE ON DELETE CASCADE
 );
 
 CREATE TABLE materias (
     materia_id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_materia VARCHAR(255),
     instituto_id INT,
-    FOREIGN KEY (instituto_id) REFERENCES institutos(instituto_id)
+    FOREIGN KEY (instituto_id) REFERENCES institutos(instituto_id) ON DELETE CASCADE
 );
 
 CREATE TABLE alumnos ( 
@@ -23,7 +23,7 @@ CREATE TABLE alumnos (
     fecha_nacimiento_alumno DATE, 
     dni_alumno VARCHAR(10) UNIQUE,
     materia_id INT,
-    FOREIGN KEY (materia_id) REFERENCES materias(materia_id)
+    FOREIGN KEY (materia_id) REFERENCES materias(materia_id) ON DELETE CASCADE
 );
 
 CREATE TABLE profesores (
@@ -40,8 +40,8 @@ CREATE TABLE asistencias (
     alumno_id INT,
     materia_id INT,
     fecha DATE,
-    FOREIGN KEY (alumno_id) REFERENCES alumnos(alumno_id),
-    FOREIGN KEY (materia_id) REFERENCES materias(materia_id)
+    FOREIGN KEY (alumno_id) REFERENCES alumnos(alumno_id) ON DELETE CASCADE,
+    FOREIGN KEY (materia_id) REFERENCES materias(materia_id) ON DELETE CASCADE
 );
 
 CREATE TABLE notas (
@@ -51,8 +51,8 @@ CREATE TABLE notas (
     nota1 DECIMAL(5,2),
     nota2 DECIMAL(5,2),
     nota3 DECIMAL(5,2),
-    FOREIGN KEY (alumno_id) REFERENCES alumnos(alumno_id),
-    FOREIGN KEY (materia_id) REFERENCES materias(materia_id)
+    FOREIGN KEY (alumno_id) REFERENCES alumnos(alumno_id) ON DELETE CASCADE,
+    FOREIGN KEY (materia_id) REFERENCES materias(materia_id) ON DELETE CASCADE
 );
 
 CREATE TABLE ram (
@@ -61,7 +61,7 @@ CREATE TABLE ram (
     porcentajeRegular DECIMAL(5,2),
     porcentajePromocion DECIMAL(5,2),
     instituto_id INT,
-    FOREIGN KEY (instituto_id) REFERENCES institutos(instituto_id)
+    FOREIGN KEY (instituto_id) REFERENCES institutos(instituto_id) ON DELETE CASCADE
 );
 
 INSERT INTO institutos (cue_instituto, nombre_instituto, direccion_instituto) VALUES 
