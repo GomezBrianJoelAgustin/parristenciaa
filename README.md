@@ -22,7 +22,7 @@ Para acceder al sistema, utiliza las siguientes credenciales:
 
 ### Carga de la Base de Datos
 
-Es necesario ejecutar un script llamado `dataTables.sql` para cargar la base de datos en Laragon utilizando HeidiSQL. Para hacerlo, sigue estos pasos:
+Es necesario ejecutar un script llamado `dbTables.sql` para cargar la base de datos en Laragon utilizando HeidiSQL. Para hacerlo, sigue estos pasos:
 
 1. **Descarga y Extracción del Archivo**:
    - Asegúrate de que el archivo del sistema Parristencia (por ejemplo, un archivo ZIP) esté descargado en tu computadora.
