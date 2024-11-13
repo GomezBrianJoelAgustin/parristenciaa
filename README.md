@@ -33,7 +33,7 @@ Es necesario ejecutar un script llamado `dbTables.sql` para cargar la base de da
      1. Abre HeidiSQL y conecta a tu servidor MySQL.
      2. Selecciona la base de datos donde deseas cargar el script.
      3. Ve a "Archivo" y selecciona "Ejecutar archivo SQL".
-     4. Busca el archivo `dataTables.sql` que se encuentra dentro de la carpeta extraída y ejecútalo.
+     4. Busca el archivo `dbTables.sql` que se encuentra dentro de la carpeta extraída y ejecútalo.
 
 3. **Acceso al Sistema**:
    - Después de configurar la base de datos, puedes acceder al sistema utilizando las siguientes credenciales:
